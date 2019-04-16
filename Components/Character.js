@@ -13,7 +13,7 @@ export default class Character extends PureComponent{
         let imageWidth = width / imageCount - spacing
 
         return(
-            <View style={{padding: 10, width: width/imageCount}}>
+            <View style={{padding: 10, width: width/imageCount, backgroundColor : "#170923"}}>
                 <Image source = {{uri: this.props.imageSource}} width = {imageWidth} style = {{borderRadius : 5}}>   
                 </Image>
                 <Text style = {{color : "white" , fontSize : 10, alignSelf : "center", marginTop : 5}}>
@@ -22,6 +22,6 @@ export default class Character extends PureComponent{
                     }
                 </Text>
             </View> 
-        )
+        ) 
     }
 }
